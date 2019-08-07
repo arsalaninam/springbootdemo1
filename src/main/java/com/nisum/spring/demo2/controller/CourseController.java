@@ -24,11 +24,6 @@ public class CourseController {
         courseService.addCourse(course);
     }
 
-    @PutMapping(value = "/{id}")
-    public void updateCourse(@RequestBody Course course, @PathVariable String id){
-        courseService.updateCourseById(course,id);
-    }
-
     @DeleteMapping(value = "/{id}")
     public void deleteCourse(@PathVariable String id){
         courseService.deleteCourseById(id);
